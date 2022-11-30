@@ -23,8 +23,8 @@
                     </ul>
                     <!-- /.ul -->
                     <div>
-                        <input type="text" name="newTask" id="newTask" placeholder="Inserisci una nuova task">
-                        <button>Inserisci</button>
+                        <input type="text" name="name" id="name" placeholder="Inserisci una nuova task" v-model="newTask">
+                        <button @click="addTask">Inserisci</button>
                     </div>
                 </div>
                 <!-- /.box -->
