@@ -19,6 +19,14 @@ createApp({
             console.log('ho cliccato sul pulsante');
             console.log(this.newTask);
             this.tasks.push(this.newTask)
+        },
+        pushTaskApi() {
+            axios.post(this.url, data, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
+                .then(response => {
+                    this.tasks = response.data;
+                })
         }
     },
     mounted() {
