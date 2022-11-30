@@ -12,7 +12,22 @@
 
 <body>
     <div id="app">
-
+        <div class="container">
+            <h1>Todo List</h1>
+            <form action="index.php" method="POST">
+                <div class="box">
+                    <ul>
+                        <li v-for="task in tasks">
+                            {{task}}
+                        </li>
+                    </ul>
+                    <!-- /.ul -->
+                </div>
+                <!-- /.box -->
+            </form>
+            <!-- /.form -->
+        </div>
+        <!-- /.container -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

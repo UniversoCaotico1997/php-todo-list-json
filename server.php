@@ -7,7 +7,8 @@ $tasks = [
     'Responsive design',
     'Laravel',
 ];
-var_dump($tasks);
 
-// header('Content-Type: application/json');
-// echo json_encode($tasks);
+// var_dump($tasks);
+
+header('Content-Type: application/json');
+echo json_encode($tasks);
