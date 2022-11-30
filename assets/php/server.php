@@ -4,10 +4,10 @@ $tasks = [
     'HTML',
     'CSS',
     'Javascript',
-    'Rsponsive design',
+    'Responsive design',
     'Laravel',
 ];
+var_dump($tasks);
 
-
-header('Content-Type: application/json');
-echo json_encode($tasks);
+// header('Content-Type: application/json');
+// echo json_encode($tasks);

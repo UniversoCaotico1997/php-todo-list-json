@@ -1,10 +1,20 @@
-const { createApp } = Vue
+// const { createApp } = Vue
 
-createApp({
-    data() {
-        return {
+// createApp({
+//     data() {
+//         return {
+//             api_url: 'server.php'
 
-
-        }
-    }
-}).mount('#app')
+//         }
+//     },
+//     methods: {
+//         readtasks(url) {
+//             axios.get(url).then(response => {
+//                 console.log(response);
+//             })
+//         }
+//     },
+//     mounted() {
+//         this.readtasks(this.api_url)
+//     }
+// }).mount('#app')
