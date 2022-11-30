@@ -13,15 +13,19 @@
 <body>
     <div id="app">
         <div class="container">
-            <h1>Todo List</h1>
+            <h1 class="text-center my-5 text-white">Todo List</h1>
             <form action="index.php" method="POST">
-                <div class="box">
+                <div class="box bg-white d-flex justify-content-center align-items-center flex-column">
                     <ul>
                         <li v-for="task in tasks">
                             {{task}}
                         </li>
                     </ul>
                     <!-- /.ul -->
+                    <div>
+                        <input type="text" name="newTask" id="newTask" placeholder="Inserisci una nuova task">
+                        <button>Inserisci</button>
+                    </div>
                 </div>
                 <!-- /.box -->
             </form>
